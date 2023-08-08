@@ -1,6 +1,95 @@
 #bg-dark {
-  background-color: black;
+  background-color: #5a5554;
+}
+#bg-light {
+  background-color: #cfcccb;
 }
 #bg-primary {
   background-color: #f57f22;
+}
+#text-dark {
+  color: #5a5554;
+}
+#text-light {
+  color: #cfcccb;
+}
+#text-primary {
+  color: #f57f22;
+}
+
+.btn-primary {
+  background: #f57f22;
+  color: #fff;
+  border: none;
+}
+
+.btn-secondary {
+  background: #9d9695;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #5a5554;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #cfcccb;
+  color: #5a5554;
+}
+
+.button-dark {
+  background: #5a5554;
+  color: #cfcccb;
+  border: none;
+}
+
+.button-dark:hover {
+  background: #cfcccb;
+  color: #5a5554;
+}
+
+.background-primary {
+  background-color: #f57f22;
+  background: #f57f22;
+}
+
+.background-secondary {
+  background: #9d9695;
+  background-color: #9d9695;
+}
+
+.txt-secondary {
+  color: #9d9695;
+}
+.txt-primary {
+  color: #f57f22;
+}
+.txt-dark {
+  color: #5a5554;
+}
+.txt-grey {
+  color: #9d9695;
+}
+.txt-light {
+  color: #cfcccb;
+}
+.txt-white {
+  color: #fff;
+}
+.txt-black {
+  color: #000;
+}
+
+.hero-header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  color: #5a5554;
 }

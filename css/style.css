@@ -199,6 +199,8 @@
 .hero-header {
   margin-bottom: 6rem;
   padding: 12rem 0 9rem 0;
+  /* background-image: url(../img/undraw_medical_research_qg4d.svg); */
+  /* background-repeat: no-repeat; */
   /* image goes here */
 }
 
@@ -412,44 +414,4 @@
   margin-right: 0;
   padding-right: 0;
   border-right: none;
-}
-
-.btn-primary {
-  background: #f57f22;
-  color: #fff;
-  border: none;
-}
-
-.btn-secondary {
-  background: #9d9695;
-  color: #fff;
-  border: none;
-}
-
-.btn-primary:hover {
-  background: #5a5554;
-  color: #fff;
-}
-
-.btn-secondary:hover {
-  background: #cfcccb;
-  color: #5a5554;
-}
-
-.bg-primary {
-  background-color: #f57f22;
-  background: #f57f22;
-}
-
-.bg-secondary {
-  background: #9d9695;
-  background-color: #9d9695;
-}
-
-.text-primary {
-  color: #f57f22;
-}
-
-.text-secondary {
-  color: #9d9695;
 }
