@@ -8,7 +8,7 @@
     <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <link href="./brand/favicon/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,37 +37,30 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Override CSS -->
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      .bg-primary {
-        background-color: #f57f22;
-        background: #f57f22;
-      }
-
-      .bg-secondary {
-        background: #9d9695;
-        background-color: #9d9695;
-      }
-
-      .text-primary {
-        color: #f57f22;
-      }
-
-      .text-secondary {
-        color: #9d9695;
-      }
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
     </style>
   </head>
 
   <body>
-    <div class="container-xxl bg-white p-0">
+    <div class="container-xxl p-0">
       <!-- Navbar & Hero Start -->
       <div class="container-xxl position-relative p-0">
         <nav
           class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
         >
           <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0">AMSCINS</h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
+            <!-- <h1 class="m-0">AMSCINS</h1> -->
+            <img src="./brand/asi-svg-logo.svg" alt="Logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -109,14 +102,12 @@
           </div>
         </nav>
 
-        <div class="container-xxl bg-dark hero-header">
+        <div class="container-xxl hero-header">
           <div class="container">
             <div class="row g-5 align-items-center">
               <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="text-white mb-4 animated zoomIn">
-                  "We make fancy detectors!"
-                </h1>
-                <p class="text-white pb-3 animated zoomIn">
+                <h1 class="mb-4 animated zoomIn">"We make fancy detectors!"</h1>
+                <p class="pb-3 animated zoomIn">
                   ASI has detectors for all kinds of particles: electrons,
                   photons, X-rays, neutrons and ions. We design and manufacture
                   higly advanced and customized detector solutions for
@@ -124,7 +115,7 @@
                   solution.
                   <a
                     href=""
-                    class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight"
+                    class="btn btn-outline-light rounded-pill border-2 mt-3 animated slideInRight"
                     >Learn More</a
                   >
                 </p>
@@ -208,7 +199,8 @@
 
       <!-- Newsletter Start -->
       <div
-        class="container-xxl bg-primary my-6 wow fadeInUp"
+        id="bg-primary"
+        class="container-xxl my-6 wow fadeInUp"
         data-wow-delay="0.1s"
       >
         <div class="container px-lg-5">
@@ -502,7 +494,8 @@
 
       <!-- Client Start -->
       <div
-        class="container-xxl bg-primary my-6 py-5 wow fadeInUp"
+        id="bg-primary"
+        class="container-xxl my-6 py-5 wow fadeInUp"
         data-wow-delay="0.1s"
       >
         <div class="container">
