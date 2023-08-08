@@ -1,20 +1,22 @@
-#bg-dark {
+.background-darker {
+  background-color: #f57d223b;
+}
+.gradient {
+  background: linear-gradient(to bottom, #f57d223b, #ffffff);
+  width: 100%;
+  height: 100vh;
+}
+.background-dark {
   background-color: #5a5554;
 }
-#bg-light {
+.background-light {
   background-color: #cfcccb;
 }
-#bg-primary {
+.background-primary {
   background-color: #f57f22;
 }
 #text-dark {
   color: #5a5554;
-}
-#text-light {
-  color: #cfcccb;
-}
-#text-primary {
-  color: #f57f22;
 }
 
 .btn-primary {
