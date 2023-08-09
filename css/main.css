@@ -24,6 +24,20 @@
   color: #fff;
   border: none;
 }
+.btn-outline-primary {
+  background: none;
+  color: #f57f22;
+  border: 1px solid #f57f22;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+.btn-outline-primary:hover {
+  background: #5a5554;
+  color: #cfcccb;
+  border: 1px solid #5a5554;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
 
 .btn-secondary {
   background: #9d9695;
@@ -94,4 +108,19 @@ h6,
 a,
 p {
   color: #5a5554;
+}
+.page-header {
+  height: 85vh;
+}
+
+.product-image {
+  margin-bottom: 6rem;
+  padding: 12rem 0 6rem 0;
+  background-image: linear-gradient(to top, #0000003f, transparent),
+    url(https://www.amscins.com/wp-content/uploads/2023/06/Chronos_series.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  object-fit: cover;
+  background-attachment: fixed;
 }

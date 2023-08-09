@@ -207,6 +207,13 @@
 .page-header {
   margin-bottom: 6rem;
   padding: 12rem 0 6rem 0;
+  background-image: linear-gradient(to top, #0000003f, transparent),
+    url(https://www.amscins.com/wp-content/uploads/2023/06/Chronos_series.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  object-fit: cover;
+  background-attachment: fixed;
 }
 
 @media (max-width: 991.98px) {
