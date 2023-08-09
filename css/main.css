@@ -119,6 +119,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+  width: auto;
   object-fit: cover;
   background-attachment: fixed;
 }
