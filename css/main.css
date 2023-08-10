@@ -114,7 +114,7 @@ p {
 }
 
 #product-image {
-  background-image: linear-gradient(to top, #0000003f, transparent),
+  background-image: linear-gradient(to top, #000000a0, transparent),
     url(https://www.amscins.com/wp-content/uploads/2023/06/Chronos_series.jpg);
   background-position: center;
   background-repeat: no-repeat;
