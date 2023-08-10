@@ -118,7 +118,7 @@ p {
     url(https://www.amscins.com/wp-content/uploads/2023/06/Chronos_series.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 100%;
   width: auto;
   object-fit: cover;
   background-attachment: scroll;
