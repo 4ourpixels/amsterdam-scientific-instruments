@@ -130,7 +130,7 @@ p {
 /* Logo Infinite scroll */
 .slider {
   margin: auto;
-  overflow: visible;
+  overflow: hidden;
 }
 .slider ul {
   display: flex;
