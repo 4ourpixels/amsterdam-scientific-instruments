@@ -133,7 +133,7 @@ p {
 .slider ul {
   display: flex;
   padding: 0;
-  animation: cambio 80s infinite linear;
+  animation: cambio 40s infinite linear;
 }
 .slider li {
   padding: 0 10px;
@@ -141,7 +141,8 @@ p {
 }
 .slider img {
   max-width: fit-content !important;
-  height: auto !important;
+  height: 15% !important;
+  object-fit: contain;
 }
 @keyframes cambio {
   from {
