@@ -13,7 +13,14 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- Icon Font Stylesheet -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
@@ -36,15 +43,6 @@
 
     <!-- Override CSS -->
     <link href="css/main.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
-    </style>
   </head>
 
   <body>
@@ -52,7 +50,7 @@
       <!-- Navbar & Hero Start -->
       <div class="container-xxl position-relative p-0">
         <nav
-          class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+          class="navbar navbar-expand-lg sticky-nav nav-sticky sticky navbar-light px-4 px-lg-5 py-3 py-lg-0"
         >
           <a href="index.html" class="navbar-brand p-0">
             <img src="./brand/asi-svg-logo.svg" alt="Logo" />
@@ -67,13 +65,15 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="#" class="nav-item nav-link">About</a>
-              <a href="#" class="nav-item nav-link">Service</a>
+              <a href="index.html" class="nav-item nav-link active text-dark"
+                >Home</a
+              >
+              <a href="#" class="nav-item nav-link text-dark">About</a>
+              <a href="#" class="nav-item nav-link text-dark">Service</a>
               <div class="nav-item dropdown">
                 <a
                   href="#"
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle text-dark"
                   data-bs-toggle="dropdown"
                   >Products</a
                 >
@@ -81,10 +81,12 @@
                   <a href="./product.html" class="dropdown-item"
                     >Chronos Series</a
                   >
-                  <a href="#" class="dropdown-item">Single Photon</a>
+                  <a href="./product.html" class="dropdown-item"
+                    >Single Photon</a
+                  >
                 </div>
               </div>
-              <a href="#" class="nav-item nav-link">Contact</a>
+              <a href="#" class="nav-item nav-link text-dark">Contact</a>
             </div>
           </div>
         </nav>
@@ -467,7 +469,7 @@
                 <div class="footer-menu">
                   <a href="">Home</a>
                   <a href="">Help</a>
-                  <a href="">FQAs</a>
+                  <a href="">FAQs</a>
                 </div>
               </div>
             </div>
