@@ -108,18 +108,23 @@ h6,
 a,
 p {
   color: #5a5554;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 a,
 p {
   color: #5a5554;
   font-family: "Source Sans 3", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #5a5554;
+  font-family: "Roboto Slab", sans-serif;
 }
 
 .product-header {
