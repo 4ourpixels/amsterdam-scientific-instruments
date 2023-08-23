@@ -130,7 +130,7 @@
               <p class="text-center mb-4">
                 Our team is happy to get in touch with you!
               </p>
-              <form>
+              <form id="engageBayForm">
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-floating">
@@ -138,6 +138,7 @@
                         type="text"
                         class="form-control"
                         id="firstName"
+                        name="firstName"
                         placeholder="First Name"
                         required
                       />
@@ -150,6 +151,7 @@
                         type="text"
                         class="form-control"
                         id="lastName"
+                        name="lastName"
                         placeholder="Last Name"
                         required
                       />
@@ -162,6 +164,7 @@
                         type="email"
                         class="form-control"
                         id="email"
+                        name="email"
                         placeholder="Email"
                         required
                       />
@@ -174,13 +177,18 @@
                         class="form-control"
                         placeholder="Leave a message here"
                         id="message"
+                        name="message"
                         style="height: 150px"
                       ></textarea>
                       <label for="message">Message</label>
                     </div>
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">
+                    <button
+                      class="btn btn-primary w-100 py-3"
+                      type="submit"
+                      onclick="submitToEngageBay()"
+                    >
                       Send Message
                     </button>
                   </div>
@@ -315,5 +323,41 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Engage Bay -->
+    <script>
+      function submitToEngageBay() {
+        const form = document.getElementById("engageBayForm");
+        const formData = new FormData(form);
+
+        // Prepare data to send to EngageBay API
+        const data = {
+          first_name: formData.get("firstName"),
+          last_name: formData.get("lastName"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+          // Other data you might need to capture
+        };
+
+        // Make an API request to EngageBay using fetch or another library
+        fetch("ENGAGEBAY_API_ENDPOINT", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            // Additional headers as needed
+          },
+          body: JSON.stringify(data),
+        })
+          .then((response) => response.json())
+          .then((result) => {
+            // Handle the API response as needed
+            console.log(result);
+          })
+          .catch((error) => {
+            // Handle errors
+            console.error(error);
+          });
+      }
+    </script>
   </body>
 </html>
