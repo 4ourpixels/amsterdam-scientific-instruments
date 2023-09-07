@@ -180,3 +180,7 @@ h6 {
     transform: scale(1);
   }
 }
+
+.product-title-font {
+  font-weight: 200;
+}
