@@ -184,3 +184,37 @@ h6 {
 .product-title-font {
   font-weight: 200;
 }
+
+/* Tree */
+
+/* Basic styling for the tree */
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for each tree node */
+.node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+/* Styling for the node head (the text) */
+.node-head {
+  background-color: #f57f22;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Styling for the node children */
+.node-children {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
