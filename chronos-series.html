@@ -156,7 +156,7 @@
                   </div>
                   <div class="ms-4">
                     <h6>Unmatched Speed</h6>
-                    <span
+                    <span id="unmatchedSpeed"
                       >Experience the unparalleled temporal resolution of 1.56 ns. 
                       To put this into perspective, in a frame-based system this translates 
                       to 600 MHz. Our pixel readout, developed in collaboration with NIKHEF, 
@@ -175,7 +175,7 @@
                   </div>
                   <div class="ms-4">
                     <h6>Event Rate</h6>
-                    <span
+                    <span id="eventRate"
                       >Capture up to a staggering 300 million hits per second; enabling 
                       state-specific large field readout of atomic lattices, quantum 
                       correlations in many single-photon interactions, large molecule 
@@ -192,6 +192,7 @@
                   <div class="ms-4">
                     <h6>Noise Free</h6>
                     <span
+                    id="noiseFree"
                       >Enjoy noise-free detection at room temperature. No need for 
                       external cooling devices.</span
                     >
@@ -205,20 +206,10 @@
                   </div>
                   <div class="ms-4">
                     <h6>Seamless Data Integration</h6>
-                    <span
-                      >Worry less with our flexible API-based control software and GUI. 
-                      You may script your experiment to fully automate the data 
-                      acquisition and operation of the detector.
-                      <br>
-                      Easily integratable with your experiment set-up and workflow. 
-                      The GUI can help to preview and monitor the camera status, 
-                      perform equalization, get immediate feedback. 
-                      <br>
-                      Flexible API-based control of the camera, which renders 
-                      the experiment scriptable and easily integratable in the rest of 
-                      the experiment. A GUI can help previewing and monitoring camera status. 
-                      Furthermore, data transfer through coaxpress can be achieved for 
-                      fast feedback focntrol applications. 
+                    <span id="dataIntergration"
+                      >Worry less with our flexible API-based control software and GUI 
+                      for previewing. You may script the detector operation to fully 
+                      automate the data acquisition and integrate seamlessly with the whole experiment.
                     </span>
                   </div>
                 </div>
@@ -249,7 +240,7 @@
                     >
                       <i class="fa fa-bolt text-white"></i>
                     </div>
-                    <h6 class="mb-0">
+                    <h6 id="keyFeature1" class="mb-0">
                       Light sensitive sensor, with a conversion efficiency > 99%
                   </div>
                 </div>
@@ -260,7 +251,7 @@
                     >
                       <i class="fa fa-satellite-dish text-white"></i>
                     </div>
-                    <h6 class="mb-0">Wavelength rage: 400 - 1000 nm</h6>
+                    <h6 id="keyFeature2" class="mb-0">Wavelength rage: 400 - 1000 nm</h6>
                   </div>
                 </div>
                 <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
@@ -270,7 +261,7 @@
                     >
                       <i class="fa fa-timeline text-white"></i>
                     </div>
-                    <h6 class="mb-0">
+                    <h6 id="keyFeature3" class="mb-0">
                       55 μm pixel size. Achieve a sub-pixel spatial resolution with centroiding (< 10 μm)
                     </h6>
                   </div>
@@ -282,7 +273,7 @@
                     >
                       <i class="fa fa-plug-circle-exclamation text-white"></i>
                     </div>
-                    <h6 class="mb-0">
+                    <h6 id="keyFeature4" class="mb-0">
                       Simultaneous detection of arrival time and intensity in each individual pixel
                     </h6>
                   </div>
@@ -294,7 +285,7 @@
                     >
                       <i class="fa fa-microscope text-white"></i>
                     </div>
-                    <h6 class="mb-0">
+                    <h6 id="keyFeature5" class="mb-0">
                       Choose from a variety of configurations and designs, including front-facing and 
                       L-shaped setups, to meet your specific experimental needs. 
                     </h6>
@@ -307,7 +298,7 @@
                     >
                       <i class="fa fa-stopwatch-20 text-white"></i>
                     </div>
-                    <h6 class="mb-0">
+                    <h6 id="keyFeature6" class="mb-0">
                       Event-based detection: Real-time and continuous operation with up to 80 million events per second
                     </h6>
                   </div>
@@ -319,7 +310,7 @@
                     >
                       <i class="fa fa-signal text-white"></i>
                     </div>
-                    <h6 class="mb-0">
+                    <h6 id="keyFeature7" class="mb-0">
                       Time resolution of 1.56 ns which can reach the picosecond range using TDC signals
                     </h6>
                   </div>
@@ -331,7 +322,7 @@
                     >
                       <i class="fa-brands fa-python text-white"></i>
                     </div>
-                    <h6 class="mb-0">
+                    <h6 id="keyFeature8" class="mb-0">
                       Flexible integration via Python API and a GUI for quick visualization and detector control
                     </h6>
                   </div>
@@ -371,7 +362,7 @@
                       <li>Intensified system</li>
                       <li>Wavelength rage 200 - 920 nm</li>
                       <li>Data processing algorithms</li>
-                      <li>Access to our single-photon network</li>
+                      <li>Access to ASI's quantum user-community </li>
                     </ul>
                     <a 
                       class="btn btn-lg btn-block btn-primary"
@@ -391,10 +382,10 @@
                 </div>
                 <div class="card-body">
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>Example 1</li>
-                    <li>Example 2</li>
-                    <li>Example 3</li>
-                    <li>Example 4</li>
+                    <li>Imaging and scattering solutions</li>
+                    <li>Hard & soft neutrons (beam energy range)</li>
+                    <li>Unique super resolution algorithm</li>
+                    <li>Small or large area options / access to neutron network</li>
                   </ul>
                   <button
                     type="button"
@@ -416,10 +407,11 @@
                 </div>
                 <div class="card-body">
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>Example 1</li>
-                    <li>Example 2</li>
-                    <li>Example 3</li>
-                    <li>Example 4</li>
+                    <li>3D-Imaging of ions/electron</li>
+                    <li>Ideal for VMI, MS and COLTRIMS</li>
+                    <li>ToF View with 260ps timestamps</li>
+                    <li>80Mhits/s Read-out Speed</li>
+                    <li>Can be Daisy Chained</li>
                   </ul>
                   <button
                     type="button"
@@ -475,9 +467,9 @@
 
       <!-- Youtube Video Start -->
       <div class="container-xxl my-5 py-6">
-          <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s">
+          <div class="row mx-auto text-center wow fadeInUp" data-wow-delay="0.1s">
             <iframe
-              style="height: 515px; width: 100%; object-fit: cover"
+              style="height: 315px; object-fit: cover"
               src="https://www.youtube.com/embed/4cYwpv3uP50"
               title="YouTube video player"
               frameborder="0"
@@ -918,5 +910,107 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Engage Bay Code -->
+    <script type="text/javascript">
+      var EhAPI = EhAPI || {};
+      EhAPI.after_load = function () {
+        EhAPI.set_account("e921v65igmmo9h9gda1ee8ekdk", "4ourpixels");
+        EhAPI.execute("rules");
+      };
+      (function (d, s, f) {
+        var sc = document.createElement(s);
+        sc.type = "text/javascript";
+        sc.async = true;
+        sc.src = f;
+        var m = document.getElementsByTagName(s)[0];
+        m.parentNode.insertBefore(sc, m);
+      })(
+        document,
+        "script",
+        "//d2p078bqz5urf7.cloudfront.net/jsapi/ehform.js?v" +
+          new Date().getHours()
+      );
+    </script>
+
+    <!-- Firebase Script -->
+
+    <script type="module">
+      // Your Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBK-ueK6qs0a40yyVNFMDIDPiPOkkkg40M",
+        authDomain: "amscins-805de.firebaseapp.com",
+        databaseURL:
+          "https://amscins-805de-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "amscins-805de",
+        storageBucket: "amscins-805de.appspot.com",
+        messagingSenderId: "198431846412",
+        appId: "1:198431846412:web:ceba0e9f18c32ca634be29",
+        measurementId: "G-GL0Y33LT5D",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.database();
+
+      // HTML Variables
+      var enterID = document.querySelector("#enterID");
+      var enterName = document.querySelector("#enterName");
+      var enterAge = document.querySelector("#enterAge");
+
+      var insertBtn = document.querySelector("#insertData");
+      var updateBtn = document.querySelector("#updateData");
+      var removeBtn = document.querySelector("#removeData");
+
+      function InsertData() {
+        // Push data to a new child node
+        db.ref("People")
+          .push({
+            Name: enterName.value,
+            ID: enterID.value,
+            Age: enterAge.value,
+          })
+          .then(() => {
+            alert("Data added successfully!");
+          })
+          .catch((error) => {
+            alert(error.message);
+          });
+      }
+
+      function UpdateData() {
+        // Update data based on a reference ID
+        const refId = enterID.value;
+        db.ref("People" + refId)
+          .update({
+            Name: enterName.value,
+            Age: enterAge.value,
+          })
+          .then(() => {
+            alert("Data updated successfully!");
+            
+          })
+          .catch((error) => {
+            alert(error.message);
+          });
+      }
+
+      function RemoveData() {
+        // Remove data based on a reference ID
+        const refId = enterID.value;
+        db.ref("People/" + refId)
+          .remove()
+          .then(() => {
+            alert("Data removed successfully!");
+          })
+          .catch((error) => {
+            alert(error.message);
+          });
+      }
+
+      insertBtn.addEventListener("click", InsertData);
+      updateBtn.addEventListener("click", UpdateData);
+      removeBtn.addEventListener("click", RemoveData);
+    </script>
   </body>
 </html>
