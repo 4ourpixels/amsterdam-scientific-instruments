@@ -465,19 +465,23 @@
                 Sign up today and be the first to get notified on new updates
               </p>
               <div class="position-relative w-100 mt-3">
-                <input
-                  class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-                  type="text"
-                  placeholder="Your Email"
-                  style="height: 48px"
-                />
-                <button
-                  type="button"
-                  class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
-                >
-                  <i class="fa fa-paper-plane txt-primary fs-4"></i>
-                </button>
+                <form name="submit-to-google-sheet">
+                  <input
+                    class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
+                    type="email"
+                    placeholder="Your Email"
+                    style="height: 48px"
+                    name="Email"
+                  />
+                  <button
+                    type="submit"
+                    class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
+                  >
+                    <i class="fa fa-paper-plane txt-primary fs-4"></i>
+                  </button>
+                </form>
               </div>
+              <p id="newsletter-message" class="text-success my-2"></p>
             </div>
           </div>
         </div>
@@ -506,6 +510,48 @@
         ><i class="bi bi-arrow-up"></i
       ></a>
     </div>
+
+    <script type="text/javascript">
+      var EhAPI = EhAPI || {};
+      EhAPI.after_load = function () {
+        EhAPI.set_account("gcl8dou5llrbr4gv254j8965t6", "amscins");
+        EhAPI.execute("rules");
+      };
+      (function (d, s, f) {
+        var sc = document.createElement(s);
+        sc.type = "text/javascript";
+        sc.async = true;
+        sc.src = f;
+        var m = document.getElementsByTagName(s)[0];
+        m.parentNode.insertBefore(sc, m);
+      })(
+        document,
+        "script",
+        "//d2p078bqz5urf7.cloudfront.net/jsapi/ehform.js?v" +
+          new Date().getHours()
+      );
+    </script>
+
+    <!-- Google Sheets Email Newsletter Script -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzrsojVDKxCa1yEHeXw7FHgWS4-PaVShHYiMVmOzYZg9hLxLkOViT_zN-UUroztixo/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const newsletterMessage = document.getElementById("newsletter-message");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            newsletterMessage.innerHTML = "Email received!";
+            setTimeout(function () {
+              newsletterMessage.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
