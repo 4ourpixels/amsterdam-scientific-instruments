@@ -218,3 +218,22 @@ h6 {
   flex-direction: row;
   justify-content: space-around;
 }
+
+/* Product Header 2 */
+
+.product-header2 {
+  padding: 15rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  animation: zoom 1s ease-in-out;
+}
+.txt-dark {
+  color: #000;
+}
+
+.fw-regular {
+  font-weight: 200;
+}
