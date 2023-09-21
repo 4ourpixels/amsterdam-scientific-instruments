@@ -237,3 +237,7 @@ h6 {
 .fw-regular {
   font-weight: 200;
 }
+
+.tble-primary {
+  background-color: #f57f22;
+}
