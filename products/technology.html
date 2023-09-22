@@ -2,9 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>
-      Neutron Imaging & Diffraction - Amsterdam Scientific Instruments
-    </title>
+    <title>Technology - Amsterdam Scientific Instruments</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -101,13 +99,13 @@
                     >Quantum Science
                   </a>
                   <a href="./cheetah.html" class="dropdown-item">Cheetah </a>
-                  <a
-                    style="background-color: #f57f22"
-                    href="./neutron-imaging.html"
-                    class="dropdown-item active"
+                  <a href="./neutron-imaging.html" class="dropdown-item"
                     >Neutron Imaging
                   </a>
-                  <a href="./technology.html" class="dropdown-item"
+                  <a
+                    style="background-color: #f57f22"
+                    href="./technology.html"
+                    class="dropdown-item active"
                     >Technology
                   </a>
                 </div>
@@ -129,7 +127,7 @@
       <div class="container-xxl py-6">
         <div class="container">
           <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s">
-            <p class="text-secondary">Applications</p>
+            <p class="text-secondary">Technology</p>
             <h1 class="my-3 product-title-font text-primary">
               LumaCAM & Diffraction
             </h1>
@@ -138,145 +136,183 @@
       </div>
     </div>
 
-    <div class="container mb-5">
-      <div class="row">
+    <div class="container-xl mb-5">
+      <div class="row justify-content-center">
         <div class="col-sm-12 col-md-6">
-          <h2 class="text-secondary mb-4">What is Neutron Imaging?</h2>
-          <p class="lead">
-            In neutron transmission imaging or neutron radiography, neutrons
-            pass through an object to reveal its internal structure. This is
-            very similar to X-ray imaging. In general, neutrons are
-            complementary to X-rays and often employed when X-rays do not
-            provide enough penetration for dense materials or when heavy
-            materials are imaged in the presence of light materials. However,
-            neutron detection systems are often subject to high background noise
-            that is inherent with the neutron production at the various large-
-            and small-scale facilities. Regular camera systems integrate during
-            individual neutron exposures and generally do not provide a
-            mechanism to discriminate particles, e.g. neutrons from gammas,
-            which is required particularly for low flux applications, such as
-            energy-resolved neutron imaging or diffraction.
+          <h2 class="text-primary product-title-font mb-4">
+            Hybrid Pixel Detectors
+          </h2>
+          <p>
+            ASI makes use of
+            <a class="text-primary" href="https://medipix.web.cern.ch/medipix3"
+              >Medipix3</a
+            >
+            and Timepix3 hybrid pixel detectors. This technology is developed at
+            CERN as fundamental technology for ultrafast and ultrasensitive
+            particle detectors. Hybrid pixel detector consist of a sensor
+            material and readout electronics (often called the Chip).
           </p>
-          <br />
-          <br />
-          <p class="lead">
-            ASI and LoskoVision have developed the LumaCAM System, an innovative
-            solution which enables researchers to overcome the limitations of
-            regular camera systems and enable neutron counting for imaging
-            applications. The LumaCAM System provides high resolution in space
-            and time for a broad range of neutron applications!
+          <p>
+            The sensor material can be adapted to the type of radiation so that
+            we can manufacture dedicated detectors for each experiment. Common
+            sensor materials are Si, GaAs and CdTe.
+          </p>
+          <p>
+            The sensor material is bump-bonded to the chip in a cleanroom
+            process. The bonding process defines the pixel size of the sensor,
+            usually 55 µm.
+          </p>
+          <p>
+            CERN currently has licensed Medipix3 and Timepix3 for commercial
+            use.
           </p>
         </div>
         <div class="col-sm-12 col-md-6 mb-5">
-          <img src="./img/1.png" alt="" class="img-fluid" />
+          <img src="./img/Hybrid-Pixel-Detector.png" alt="" class="img-fluid" />
         </div>
       </div>
     </div>
 
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <h2 class="text-secondary mt-5 mb-4">LumaCAM System</h2>
-          <p class="lead">
-            LumaCAM System incorporates the LumaCAM to offer neutron researchers
-            a complete event-based solution. The system features a counting-type
-            neutron detection, specialized light tight enclosure, and adjustable
-            Field-of-View (FoV)
+    <div class="container-xl my-5">
+      <div class="row justify-content-center">
+        <h2 class="text-primary product-title-font mt-5 mb-4">
+          Direct Detection and Particle Counting Principle
+        </h2>
+        <p>
+          Every particle hit (photon, electron, X-Ray or ion) on the sensor
+          surface generates a charge cloud of electron-hole pairs. Due to the
+          polarization bias voltage the electron-hole pairs are collected at the
+          bump-bond junction (the pixel contact). The analogue electronic is
+          capable to record the charge at the junction and convert this into a
+          digital signal.
+        </p>
+        <p>
+          The high amplification of the sensor allows to define a lower
+          threshold and eliminating all intrinsic noise of the sensor. This
+          enables the chip to perform particle counting instead of chargeng to
+          noise-free datasets. The direct conversion of particles into
+          electronic signals is highly efficient, therefore hybrid pixel
+          detectors are much more sensitive than other indirect detectors (e.g.
+          CCD).
+        </p>
+        <p>
+          Medipix3 chips can define up to 8 different thresholds so that the
+          chip can also be used to perform energy-resolved detection (e.g. for
+          X-rays or gamma radiation).
+        </p>
+      </div>
+    </div>
+
+    <div class="container-xl">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-7">
+          <img src="./img/TPX3sensor-1024x784.jpg" class="img-fluid" />
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <h2 class="text-primary product-title-font mb-4">
+            Medipix3 and Timepix3
+          </h2>
+          <p>
+            Both Medipix3 and Timepix3 chips have identical geometrical
+            dimensions with 55 µm x 55 µm square pixels in an array of 256×256
+            pixels. The chip is 3-side buttable, i.e. the chip is suitable to
+            build gap-less detectors of infinite length with a width of 512
+            pixels.
+          </p>
+          <p>
+            Both chips are designed with respect to radiation hardness and will
+            not deteriorate even under extreme beam conditions (Giga eV).
+          </p>
+          <p>
+            After the bump-bonding to the sensor, the chip is placed on
+            dedicated chipboard. The chipboard usually is designed for a
+            specific experiment or application (e.g. for advanced TEM or neutron
+            detection).
+          </p>
+          <p>
+            The chipboard is then connected to the readout electronics either
+            via a PCB or a flexible flat cable.
+          </p>
+          <p>
+            The readout electronics delivers data via TCP/UDP to a standard
+            Ubuntu workstation.
           </p>
         </div>
+      </div>
+    </div>
+
+    <div class="container-xl mt-5">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-7">
+          <h2 class="text-primary product-title-font  mb-4">
+            Medipix3 Concept
+          </h2>
+          <p>
+            Medipix3 chips are designed for particle counting with high frame
+            rates. Particle counting means that the number of particle hits is
+            counted in a defined timeframe as intensity data. The chip delivers
+            full frame intensities with a frame rate of up to 2000 frames per
+            second.
+          </p>
+          <p>
+            The chip supports sophisticated charge summing and charge
+            arbitration to reduce point spread and cross-talk. Thanks to the
+            thresholding capability the data is noise-free.
+          </p>
+          <p>
+            The chip can be operated at different speeds. Higher speeds of up to
+            10000 frames per second are achieved by reducing the signal bit
+            depth (see table on the right).
+          </p>
+          <p>
+            The operation mode of the chip is comparable to other frame-based
+            detector modes such as conventional CMOS or CCD cameras – but with
+            vastly improved speed, sensitivity, and dynamic range.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <img src="./img/MPX3modes-1024x612.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-xl">
+      <div class="row justify-content-center">
         <div class="col-sm-12 col-md-6">
-          <figure>
-            <img
-              src="./img/LumaCamSystem__2022-Apr-01_06-16-08PM-000_View3-1500x704-1-1024x481.png"
-              alt="Trulli"
-              style="width: 100%"
-            />
-            <figcaption>
-              The above illustration is a design example. Based on
-              Field-of-View, design may alter. Final design drawings will depend
-              on customer specifications.
-            </figcaption>
-          </figure>
+          <img
+            src="./img/Timepix3-Technology-1024x1024.png"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <h2 class="text-primary product-title-font mt-5 mb-4">
+            Timepix3 Concept
+          </h2>
+          <p>
+            Timepix3 is a radically different detection chip. Unlike frame-based
+            camera concepts where data is only generated in pre-defined
+            intervals (the ‘frame’), the Timepix3 chip generates data
+            immediately after a particle hit.
+          </p>
+          <p>
+            The Timepix3 is therefore an event-counting detector where events
+            can be differentiated with a time resolution of 1.56 nanoseconds.
+            Every particle hit generates this information:
+            <ul>
+              <li>ToA = Time of Arrival: defined as the time of signal level raising over the electronic threshold.</li>
+              <li>ToT = Time over Threshold: representing the amount of charge deposited in the pixel – correlated to the energy of the particle.</li>
+              <li>X,Y = Pixel coordinates</li>
+            </ul>
+          </p>
+          <p>The Timepix3 chip has an intrinsic time resolution of 1.56 nanoseconds, i.e. the detector can record events with a theoretical frame rate of up to 640 million frames per second (= 1 / 1.56 ns). </p>
+          <p>The maximum achievable hit rate of one chip is defined by the readout electronics and is currently limited to 80 million hits per second. </p>
         </div>
       </div>
     </div>
-
-    <!-- Table Start -->
-    <div class="container">
-      <div class="row">
-        <table class="table">
-          <thead class="tble-primary text-white">
-            <tr>
-              <th scope="col">
-                <h4 class="text-white mt-2">LumaCAM System</h4>
-              </th>
-              <th scope="col"></th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Enclosure Materials</td>
-              <td>Aluminium</td>
-            </tr>
-            <tr>
-              <td>Detector Mounting</td>
-              <td>Breadboard</td>
-            </tr>
-            <tr>
-              <td>Active FoV</td>
-              <td>~50 x 50 mm2 to ~300 x 300 mm2</td>
-            </tr>
-            <tr>
-              <td>Optical lens</td>
-              <td>High speed lens</td>
-            </tr>
-            <tr>
-              <td>Image Intensifier</td>
-              <td>Chevron MCPs Hi-QE 18 mm P47 phosphor</td>
-            </tr>
-            <tr>
-              <td>Scintillator</td>
-              <td>100 to 400 nm ZnS(Ag): LiF</td>
-            </tr>
-            <tr>
-              <td>Linear Travel for FoV Adjustment</td>
-              <td>120 mm</td>
-            </tr>
-            <tr>
-              <td>Drive for Linear Travel</td>
-              <td>Stepper motor or manual</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <!-- Table End -->
-
-    <div class="container my-5">
-      <div class="row">
-        <img src="./img/neutron-imaging-300x300.jpg" class="img-fluid w-50" />
-        <div class="col text-start">
-          <h5 class="mt-4">
-            New perspectives for neutron imaging through advanced event-mode
-            data acquisition
-          </h5>
-          <h4 class="my-4">Nature - Publication</h4>
-          <a
-            class="btn btn-primary"
-            download="https://www.nature.com/articles/s41598-021-00822-5"
-            href="https://www.nature.com/articles/s41598-021-00822-5"
-            >Click to download​</a
-          >
-        </div>
-      </div>
-      <div class="container justify-content-center mt-5">
-        <div class="btn-group">
-          <button class="btn btn-secondary">Product Information LumaCAM</button>
-          <button class="btn btn-primary">
-            Request a Quotation for LumaCAM
-          </button>
-        </div>
+    <div class="container-xl">
+      <h2 class="text-primary product-title-font mt-5 mb-4">Detection Principle</h2>
+      <div class="row justify-content-center">
+        <img src="./img/Medipix-and-Timepix-1024x432.png" alt="" class="img-fluid">
       </div>
     </div>
 
