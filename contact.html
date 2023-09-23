@@ -80,6 +80,12 @@
                     class="dropdown-item"
                     >Chronos Series</a
                   >
+                  <a href="../products/cheetah.html" class="dropdown-item"
+                    >Cheetah</a
+                  >
+                  <a href="../products/technology.html" class="dropdown-item"
+                    >Technology</a
+                  >
                   <!-- <a
                     href="../products/quantum-science.html"
                     class="dropdown-item"
@@ -212,27 +218,6 @@
         "//d2p078bqz5urf7.cloudfront.net/jsapi/ehform.js?v" +
           new Date().getHours()
       );
-    </script>
-
-    <!-- Google Sheets Email Newsletter Script -->
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzrsojVDKxCa1yEHeXw7FHgWS4-PaVShHYiMVmOzYZg9hLxLkOViT_zN-UUroztixo/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const newsletterMessage = document.getElementById("newsletter-message");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            newsletterMessage.innerHTML = "Email received!";
-            setTimeout(function () {
-              newsletterMessage.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
     </script>
 
     <!-- JavaScript Libraries -->
