@@ -154,12 +154,12 @@ h6 {
   animation: cambio 20s infinite linear;
 }
 .slider li {
-  padding: 0 10px;
+  padding: 0 0px;
   list-style: none;
 }
 .slider img {
   max-width: fit-content !important;
-  height: 15% !important;
+  height: 10% !important;
   object-fit: contain;
 }
 @keyframes cambio {
